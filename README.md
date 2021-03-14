@@ -10,6 +10,8 @@ For this problem set, you will submit to Canvas **a single .zip file**. Detailed
 
 **Folders:** Make sure your programs and your files are all in the same folder. If you like, you can just download this whole directory to your Desktop.
 
+**Libraries and modules**: The only module you can import is `sys`.
+
 **Honor pledge**: And, as always, in every program, the first four lines (comments) should be your honor pledge.
 
 ---
