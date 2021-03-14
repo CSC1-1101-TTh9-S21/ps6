@@ -70,7 +70,7 @@ Here's what I expect to see as your output when you provide `encoded-message1.tx
 ---
 
 ## What to turn in
-If you haven't already, create a `ps6` folder. In your `p6` folder, put both your Python programs, then zip the folder up using whatever means you normally use to zip things up (e.g., on a Mac, you can right click and select `Compress`). Upload the `ps6.zip` file you created to Canvas. 
+If you haven't already, create a `ps6` folder. In your `p6` folder, put both your Python programs in the folder,  zip the folder, and upload the `ps6.zip` file you created to Canvas. 
 
 **Don't forget your comments!**
 
