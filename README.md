@@ -49,7 +49,7 @@ I have written the `main()` function for you! You will probably want to modify i
 I have included 3 encoded texts for you to experiment with. Be sure that I can run your program on all three texts.
 
 ### Example Output
-Here's what I expect to see as your output when you provide `encoded-message1.txt` as the command line argument. (Note that you can report a positive shift size or a negative shift size. A shift size of 24 is the same as a shift size of -2.)
+Here's what I expect to see as your output when you provide `encoded-message1.txt` as the command line argument. (Note that you can report a positive shift size or a negative shift size. A shift size of 23 is the same as a shift size of -3.)
 
 <img src="oprah.png" width=500>
 
@@ -63,7 +63,7 @@ In the last part, you used brute force to solve the Caesar cipher. In this part,
 
 * Update the `main()` method so that you save out three variables when you call `solvethecipher(text)`, since `solvethecipher()` now returns three values. In addition, update `main()` to print out the decoded text, the shift size, and the number of shifts you had to try before getting a solution.
 
-Here's what I expect to see as your output when you provide `encoded-message1.txt` as the command line argument. (Again, you can report a positive shift size or a negative shift size. A shift size of 24 is the same as a shift size of -2.)
+Here's what I expect to see as your output when you provide `encoded-message1.txt` as the command line argument. (Again, you can report a positive shift size or a negative shift size. A shift size of 23 is the same as a shift size of -3.)
 
 <img src="oprah2.png" width=500>
 
