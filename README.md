@@ -49,14 +49,15 @@ Here's what I expect to see as your output when you provide `encoded-message1.tx
 
 ## Part 2: Caesar cipher: More efficient decoding
 
-In the last part, you used brute force to solve the Caesar cipher. In this part, you will try to solve the problem more efficiently. Get started by making a copy of `part1.py` called `part2.py`. The write these functions:
+In the last part, you used brute force to solve the Caesar cipher. In this part, you will try to solve the problem more efficiently. Get started by making a copy of `part1.py` called `part2.py`. Then make the following adjustments:
 
-* `getfrequencies()`: This function first counts the frequency of each letter in the text using a for loop. (Reminder: do not import additional libraries!). Then it runs another for loop to calculate the relative of each letter in the text (i.e., the number of times it appears in the text divided by how many letters there are in total in the text). It returns a list of tuples where each tuple has as its first element the letter and as its second element the letter's relative frequency. The list of tuples should be sorted by the second element. If you call the list `freqlist`, you can sort it like this:                          
-```
-freqlist.sort(key=lambda x:x[1])
-```
+* Write a function called `getfrequencies(text)` that first counts the frequency of each letter in the text using a for loop. (*Reminder: do not import additional libraries!*). Then it runs another for loop to calculate the relative of each letter in the text (i.e., the number of times it appears in the text divided by how many letters there are in total in the text). It returns a list of tuples where each tuple has as its first element the letter and as its second element the letter's relative frequency. The list of tuples should be sorted by the second element. If you call the list `freqlist`, you can sort it with this line of code: `freqlist.sort(key=lambda x:x[1])`.
 
-* Delete your code for `solvethecipher(text)` and rewrite it as follows. The most frequent letter English texts is `e`. Therefore, the letter in the encoded text that is the most frequent or is one of the most frequent is likely to be `e`! Instead of trying every possible shift size, you will strategically choose the shift size will map the most frequent character in the encoded text to `e` and then submit that to `checkgoodness()`. If `checkgoodnes()` returns false, choose the shift size that will map the second most frequent character in the encoded text to `e`, and submit to `checkgoodness()`. Kepp doing this until `checkgoodness()` returns `True`, then return the encoded text and the shift size.
+* Delete your `part1.py1` code for `solvethecipher(text)` and rewrite it as follows. The most frequent letter English texts is `e`. Therefore, the letter in the encoded text that is the most frequent or is one of the most frequent is likely to be `e`! Instead of trying every possible shift size, you will strategically choose the shift size that will map the most frequent character in the encoded text to `e`, and then submit that to `checkgoodness()`. If `checkgoodnes()` returns false, choose the shift size that will map the second most frequent character in the encoded text to `e`, and submit to `checkgoodness()`. Keep doing this until `checkgoodness()` returns `True`, then return the encoded text, the shift size, and the number of shifts you had to try before getting a solution.
+
+* Update the `main()` method so that you save out three variables when you call `solvethecipher(text)`, since solve the cipher now returns three values. In addition, update `main()` to print out the decoded text, the shift size, and the number of shifts you had to try before getting a solution.
+
+Here's what I expect to see as your output when you provide `encoded-message1.txt` as the command line argument:
 
 
 ---
