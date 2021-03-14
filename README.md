@@ -34,7 +34,7 @@ For this program, I have given you some starter code, which you'll find in the `
 
 * `checkgoodness(text)`: This boolean function takes a `text` (a shifted text), splits it into words, then looks each word up in the global variable `englishdictionary`. It keep track of how many of the words in the text are real words that appear in `englishdictionary`. If more than 1/3 of the words in the text appear in `englishdictionary`, then it should return `True`. Otherwise, it should return `False`.
 
-* `bruteforcedecode(text)`: This function submits every possible decoding (i.e., shift) for `text` to `checkgoodness()` until it gets a decoding that `checkgoodness()` decides is likely to be English (i.e., returns `True`). When `checkgoodness()` returns `True`, meaning that there are lots of English words in the text, it returns the shiftsize that worked and the decoded text. 
+* `solvethecipher(text)`: This function submits every possible decoding for `text` (i.e., every possible shift size from 0 to 25)  to `checkgoodness()` until it gets a decoding that `checkgoodness()` decides is likely to be English (i.e., returns `True`). When `checkgoodness()` returns `True`, meaning that there are lots of English words in the text, it returns the shift size that worked and the decoded text. 
 
 ### `main()` function
 I have written the `main()` function for you! You will probably want to modify it as you are developing your code, but make sure to return it back to its original form before you turn in the problem set.
@@ -47,9 +47,16 @@ Here's what I expect to see as your output when you provide `encoded-message1.tx
 
 <img src="oprah.png" width=500>
 
-## Part 2: Caesar cipher: Using statistics
+## Part 2: Caesar cipher: More efficient decoding
 
-In the last part, you used brute force to solve the Caesar cipher. In this part, you will try to solve the problem more efficiently. Get started by making a copy of `part1.py` called `part2.py`.
+In the last part, you used brute force to solve the Caesar cipher. In this part, you will try to solve the problem more efficiently. Get started by making a copy of `part1.py` called `part2.py`. The write these functions:
+
+* `getfrequencies()`: This function first counts the frequency of each letter in the text using a for loop. (Reminder: do not import additional libraries!). Then it runs another for loop to calculate the relative of each letter in the text (i.e., the number of times it appears in the text divided by how many letters there are in total in the text). It returns a list of tuples where each tuple has as its first element the letter and as its second element the letter's relative frequency. The list of tuples should be sorted by the second element. If you call the list `freqlist`, you can sort it like this:                          
+```
+freqlist.sort(key=lambda x:x[1])
+```
+
+* Delete your code for `solvethecipher(text)` and rewrite it as follows. The most frequent letter English texts is `e`. Therefore, the letter in the encoded text that is the most frequent or is one of the most frequent is likely to be `e`! Instead of trying every possible shift size, you will strategically choose the shift size will map the most frequent character in the encoded text to `e` and then submit that to `checkgoodness()`. If `checkgoodnes()` returns false, choose the shift size that will map the second most frequent character in the encoded text to `e`, and submit to `checkgoodness()`. Kepp doing this until `checkgoodness()` returns `True`, then return the encoded text and the shift size.
 
 
 ---
