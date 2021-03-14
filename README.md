@@ -4,7 +4,7 @@
 
 For this problem set, you will submit to Canvas **a single .zip file**. Detailed instructions for what the .zip file should contain are at the end of this problem set. Note that if you do not submit the files as specified here, there will be a major deduction in your grade for this assignment. Following directions to the letter is a crucial skill for computer programming.
 
-**Note: Your programs should all have the following format: import statements (if necessary); then function definitions (if there are any); then a `main()` function that gets the ball rolling and calls the functions you defined (if any); and finally outide all other functions, the call to `main()`.**
+**Note:** We now have a new component to our programs: **global variables**! Your programs should all have the following format: import statements (if necessary); the global variables (if there are any); then function definitions (if there are any); then a `main()` function that gets the ball rolling and calls the functions you defined (if any); and finally outide all other functions, the call to `main()`.
 
 ### Comments
 I now expect you to write comments in your code! Two points will be deducted if you provide no or minimal comments, and 1 point will be deducted if you have sufficient comments but they do not conform to these requirements:
@@ -24,19 +24,21 @@ And, as always, in every program, the first four lines (comments) should be:
 
 ---
 
-## Part 1: Caesar cipher
+## Part 1: Caesar cipher: Brute force
+In this program, you will write a program to encode and decode messages written using a [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher). 
+The Caesar cipher is named after Julius Caesar, who, according to Suetonius, used it to protect messages of military significance. The Caesar Cipher is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in a text is replaced by a letter some fixed number of positions down the alphabet. For example, with a right shift of 3, A would be replaced by D, B would become E, and so on until W becomes Z; when the end of the alphabet is reached, the cipher wraps around to the front of the alphabet, so X would be replaced by A, Y by B, and Z by C. It is unknown how effective the Caesar cipher was at the time, but it is likely to have been reasonably secure, not least because most of Caesar's enemies would have been illiterate and others would have assumed that the messages were written in an unknown foreign language. There is no record at that time of any techniques for the solution of simple substitution ciphers.
 
 
-## Part 2: Language ID: Character sets
+## Part 2: Caesar cipher: Using statistics
+
+
+## Part 3: Language identification
 
 get all letters
 store letter to int mapping as dictionary
 calculate percent for each letter for each language -- array
 dictionary mapping language -> list of frequencies
 
-
-
-## Part 3: Language ID: Character frequencies
 
 get all letters
 store letter to int mapping as dictionary
@@ -60,6 +62,5 @@ Note that if you do not submit the files as specified here, there will be a majo
 
 **Don't forget your comments!**
 
-### This problem set is due Friday, March 12, 2021, at 11:59pm EST
-# ps6
-Problem Set 6
+### This problem set is due Friday, March 19, 2021, at 11:59pm EST
+
