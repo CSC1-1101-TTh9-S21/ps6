@@ -6,15 +6,9 @@ For this problem set, you will submit to Canvas **a single .zip file**. Detailed
 
 **Note:** We now have a new component to our programs: **global variables**! Your programs should all have the following format: import statements (if necessary); the global variables (if there are any); then function definitions (if there are any); then a `main()` function that gets the ball rolling and calls the functions you defined (if any); and finally outide all other functions, the call to `main()`.
 
-### Comments
-I now expect you to write comments in your code! Two points will be deducted if you provide no or minimal comments, and 1 point will be deducted if you have sufficient comments but they do not conform to the requirements outlined in PS4.
+**Comments:** I now expect you to write comments in your code! Two points will be deducted if you provide no or minimal comments, and 1 point will be deducted if you have sufficient comments but they do not conform to the requirements outlined in PS4.
 
-And, as always, in every program, the first four lines (comments) should be:
-
-* The name of the file.
-* Your name.
-* The date.
-* A statement saying "This code is my own work. I did not share my code or look at the code of another student."
+**Honor pledge**: And, as always, in every program, the first four lines (comments) should be your honor pledge.
 
 ---
 
@@ -49,7 +43,9 @@ I have written the `main()` function for you! You will probably want to modify i
 I have included 3 encoded texts for you to experiment with. Be sure that I can run your program on all three texts.
 
 ### Example Output
-Here's what I expect to see as your output for `encoded-message1.txt`:
+Here's what I expect to see as your output when you provide `encoded-message1.txt` as the command line argument:
+
+<img src="oprah.png" width=500>
 
 ## Part 2: Caesar cipher: Using statistics
 
