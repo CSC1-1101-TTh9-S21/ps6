@@ -24,10 +24,10 @@ The Caesar cipher is named after Julius Caesar, who, according to Suetonius, use
 
 The Caesar cipher is a very popular thing to assign as a problem set for CS1 so you will find lots of solutions on the internet. The only acceptable solution for this class will be one that conforms to the the specific requirements stated in this problem set description, below. In particular, you cannot use the Python `chr()` and `ord()` or the `translate()` and `maketrans()` string functions.
 
-For this program, you will use brute force to try to decode an encoded messages. I have given you some starter code, which you'll find in the `part1.py1` file in this directory. The information here is included (with different wording) in the comments in the code. **Keep all of your files in the same folder!**
+For this program, you will use brute force to try to decode an encoded messages. I have given you some starter code, which you'll find in the `part1.py` file in this directory. The information here is included (with different wording) in the comments in the code. **Keep all of your files in the same folder!**
 
 ### Global Variables
-* `alphabet`: a string set to `ABCDEFGHIJKLMNOPRSTUVWXYZ`.
+* `alphabet`: a string set to `ABCDEFGHIJKLMNOPQRSTUVWXYZ`.
 *  `englishwords`: a set containing the top 2000 words in English, which I populate for you.
 *  `alpha2num`: a dictionary that you will populate in one of the functions below.
 
